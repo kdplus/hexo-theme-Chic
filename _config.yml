@@ -1,5 +1,5 @@
 # Header
-navname: Bentham's Blog
+navname: 「99194853094755497」
 
 # navigatior items
 nav:
@@ -11,12 +11,18 @@ nav:
 # favicon
 favicon: /favicon.ico
 
+# Comments 
+disqus:
+  enable: true
+  shortname: kdplus
+  count: true
+
 # Profile
-nickname: Jeremy Bentham
+nickname: Mika 
 
 ### this variable is MarkDown form.
-description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
-avatar: /image/avatar.jpeg
+description: \"The pain I feel now is the happiness I had before. That's the deal.\" ― C.S. Lewis
+avatar: /images/avatar.jpeg
 
 # main menu navigation
 ## links key words should not be changed.
@@ -33,23 +39,23 @@ links:
   # Gallery:
   # RSS:
   # AliPay:
-  ZhiHu: https://www.zhihu.com/people/sirice
+  ZhiHu: https://www.zhihu.com/people/wang-yu-xi-12 
   # LinkedIn:
   # FaceBook:
-  # Twitter:
   # Skype:
   # CodeSandBox:
   # CodePen:
   # Sketch:
   # Gitlab:
   # Dribbble:
-  Instagram:
-  Reddit:
+  # Instagram:
+  # Reddit:
   # YouTube:
   # QQ:
-  # Weibo:
+  Weibo: http://weibo.com/maxsn
+  Twitter: https://twitter.com/NUJLLKN
   # WeChat:
-  Github: https://github.com/Siricee
+  Github: https://github.com/kdplus
 
 # how links show: you have 2 choice--text or icon.
 links_text_enable: false
@@ -69,8 +75,8 @@ post_copyright_author_enable: true
 post_copyright_permalink_enable: true
 post_copyright_license_enable: true
 post_copyright_license_text: Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE
-post_copyright_slogan_enable: true
-post_copyright_slogan_text: Do you believe in <strong>DESTINY</strong>?
+post_copyright_slogan_enable: false
+post_copyright_slogan_text:  
 ## toc
 post_toc_enable: true
 
@@ -104,3 +110,22 @@ mathjax:
   import: demand # global or demand
   ## global: all pages will load mathjax,this will degrade performance and some grammers may be parsed wrong.
   ## demand: Recommend option,if your post need fomula, you can declare 'mathjax: true' in Front-matter
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: hijiki 
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.1
