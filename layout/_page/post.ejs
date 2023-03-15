@@ -32,12 +32,21 @@
 
                     <% if(page.categories.length!==0 && theme.post_category_enable){ %>
                         <div>
-                        <span class="post-category">
-                            Category:
-                            <% page.categories.forEach(item=>{ %>
-                                <a href="<%- url_for(item.path) %>"><%- item.name %></a>
-                            <% }) %>
-                        </span>
+                            <span class="post-category">
+                                Category:
+                                <% page.categories.forEach(item=>{ %>
+                                    <a href="<%- url_for(item.path) %>"><%- item.name %></a>
+                                <% }) %>
+                            </span>
+                        </div>
+                    <% } %>
+
+                    <% if(config.disqus.enable){ %>
+                        <div class="post-meta-comments">
+                            <img class="meta-icon" src="/image/comment.png">
+                            <a href="<%- page.permalink + '#disqus_thread' %>">
+                                <span class="disqus-comment-count" data-disqus-url="<%- page.permalink + '#disqus_thread' %>"> <!-- Count will be inserted here --> </span>
+                            </a>
                         </div>
                     <% } %>
                 </div>
@@ -102,7 +111,6 @@
             <a class="next" rel="next" href="<%- url_for(post.next.path)%>"><%- post.next.title%></a>
             <% } %>
         </section>
-
-
+        <%- partial('_partial/comments/disqus') %>
     </article>
 </div>
