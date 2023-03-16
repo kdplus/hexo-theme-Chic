@@ -29,7 +29,6 @@ how to add a category page:
             <h2 class="post-title">-&nbsp;Categories&nbsp;-</h2>
             <div class="categories-card">
                 <% site.categories.forEach(category_item=>{ %>
-                    <%# console.log("hehe") %>
                     <div class="card-item">
                         <div class="categories">
                             <a href="<%- url_for(category_item.path) %>">
@@ -39,7 +38,6 @@ how to add a category page:
                                 </h3>
                             </a>
                             <% category_item.posts.forEach((post_item, index = 0)=>{ %>
-                                <%# console.log(index) %>
                                 <% if(++index <= 5){ %>
                                     <article class="archive-item">
                                         <a class="archive-item-link"
