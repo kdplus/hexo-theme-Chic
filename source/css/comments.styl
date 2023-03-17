@@ -1,19 +1,27 @@
 // style to show comments in post and archive page
-.post-meta-comments
+.meta-icon
+    border-style: none;
+    margin-right: 10px;
+    max-height: 100%;
+    height: 16.5pt;
+
+.post-meta-comments 
     display: flex;
     align-items: center;
-    .meta-icon
-        border-style: none;
-        margin-right: 10px;
-        max-height: 100%;
-        height: 16.5pt;
+
+.archive-item
+    display: flex;
+    align-items: center;
 
 .archive-item
     justify-content: space-between;
     display: flex;
 
-.archive-item span:nth-child(2) 
+.archive-item .meta-icon:nth-child(2) 
     margin-right: 10px;
     margin-left: auto;
+
+.archive-item span:nth-child(3) 
+    margin-right: 10px;
     color: #a9a9b3;
     
